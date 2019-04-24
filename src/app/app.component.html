@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
+<!-- <hello name="{{ name }}"></hello>
 <p>
   Start editing to see some magic happen :)
-</p>
+</p> -->
+
+
+<app-game-control  (start)="listenNum($event)"></app-game-control>
+
+<hr>
+
+<div class="container" *ngFor='let num of countArray'>
+  <app-odd *ngIf='num%2 != 0'></app-odd>
+  <app-even *ngIf='num%2 == 0'></app-even>
+</div>

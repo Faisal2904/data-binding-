@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  countArray=[];
+
+  constructor(){}
+
+  listenNum(event){
+    console.log("In listenNum");
+    this.countArray.push(event);
+  }
 }
