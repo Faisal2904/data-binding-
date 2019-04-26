@@ -8,7 +8,7 @@ export class UnlessDirective implements OnInit{
 
   @Input() set appunless(condition:boolean){
     if(!condition){
-     this.vcRef.createEmbeddedView(templateRef);
+     this.vcRef.createEmbeddedView(this.templateRef);
     }else{
                this.vcRef.clear();
     }

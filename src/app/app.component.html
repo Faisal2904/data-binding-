@@ -12,5 +12,6 @@
   <app-odd *ngIf='num%2 != 0'></app-odd>
   <app-even *ngIf='num%2 == 0'></app-even>
 </div>
+<button (click)="fun()">toggle</button>
 
-<p appbasicHighlight [defaultColor]="'yellow'" [highlightColor]="'green'" >Hi I am from basic directive created by me</p>
+<p appbasicHighlight [defaultColor]="'yellow'" [highlightColor]="'green'" *appunless="flag">Hi I am from basic directive created by me</p>
