@@ -10,6 +10,7 @@ export class AppComponent  {
   countArray=[];
   count=0;
   flag=false;
+  value=100;
 
   constructor(){}
 

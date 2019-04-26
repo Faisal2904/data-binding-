@@ -15,3 +15,11 @@
 <button (click)="fun()">toggle</button>
 
 <p appbasicHighlight [defaultColor]="'yellow'" [highlightColor]="'green'" *appunless="flag">Hi I am from basic directive created by me</p>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="10">10</p>
+  <p *ngSwitchCase="100">100</p>
+  <p *ngSwitchCase="1">1</p>
+  <p *ngSwitchCase="1000">1000</p>
+  <p *ngSwitchDefault>10</p>
+</div>
