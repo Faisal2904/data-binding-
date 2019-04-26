@@ -6,17 +6,8 @@ import { Component,Output,EventEmitter } from '@angular/core';
   styleUrls: [ './game-control.component.css' ]
 })
 export class GameControlComponent  {
-  name = 'Angular';
-
-   count: number = 0;
-  intervalObj;
-
-  @Output('start') randomNum = new EventEmitter();
-
-  controller(){}
-
-  startFun(){
-    console.log("In startFun");
+ name = 'Angular';   count: number = 0;  intervalObj;  @Output('start') randomNum = new EventEmitter();  controller(){} 
+  startFun(){    console.log("In startFun");
     
     this.intervalObj = setInterval(() => {
       this.count++;
